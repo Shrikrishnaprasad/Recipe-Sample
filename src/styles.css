@@ -1,0 +1,128 @@
+body {
+  background: rgba(0, 0, 0, 0.1);
+  margin-top: 0px;
+}
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  width: 92%;
+  margin: auto;
+  margin-top: 0px;
+}
+.App_header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background: whitesmoke;
+  color: darkslategray;
+  letter-spacing: 1.1px;
+  z-index: 10;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 1px;
+}
+.App_heading {
+  margin: auto;
+}
+.App_header_fab {
+  background-color: white;
+  color: grey;
+}
+.card {
+  display: grid;
+  gap: 24px;
+  grid-template-columns: 1fr;
+  padding: 24px;
+  transition: all 0.3s;
+  margin-right: 0px !important;
+}
+.cardItems {
+  background: white;
+  border-radius: 10px !important;
+  transition: all 0.3s;
+}
+
+.center {
+  margin: auto !important;
+}
+.showMoreBtn {
+  margin-bottom: 8px !important;
+}
+ul {
+  padding-left: 0;
+  margin-top: 4px;
+  list-style-type: none;
+}
+ul li {
+  text-align: left;
+  padding: 2px;
+}
+.itemImgs {
+  padding: 16px !important;
+}
+img {
+  width: 380px;
+  height: 200px;
+  border-top-left-radius: 42px;
+  border-bottom-left-radius: 42px;
+  opacity: 0.9;
+  transition: all 0.3s;
+}
+
+img:hover {
+  cursor: pointer;
+  opacity: 1;
+  transform: scale(1.06);
+}
+.time {
+  font-size: 18px;
+  color: green;
+}
+.amt {
+  letter-spacing: 1.1px;
+  font-weight: bolder;
+  color: green;
+  font-size: 24px;
+  float: right;
+}
+.MuiCardActions-root {
+  padding-top: 0px;
+}
+
+@media (min-width: 600px) {
+  .card {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 720px) {
+  .App {
+    width: 94%;
+  }
+}
+@media (min-width: 768px) {
+  .App {
+    width: 92%;
+  }
+  .card {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 992px) {
+  .App {
+    width: 92%;
+  }
+  .card {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (min-width: 1200px) {
+  .card {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media (min-width: 1400px) {
+  .App {
+    width: 86%;
+  }
+}
